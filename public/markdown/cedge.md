@@ -9,4 +9,4 @@ Things to bear in mind:
 * We don't guarantee any uptime. Do not report that the bot has gone offline.
 * Most of the changes are under the hood, so not much functionality has changed. 
 * If you find any bugs, please report them to the `#cutting_edge_bot` in our Discord server.
-  * Alternatively, send an email to `cuttingedge@frederikam.com`.
+  * Alternatively, send an email to cuttingedge@frederikam.com
