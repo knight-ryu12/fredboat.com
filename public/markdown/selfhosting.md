@@ -25,7 +25,7 @@ FredBoat requires a PostgreSQL database to run. The easiest way to achieve that 
 Whenever editing any files, use a proper text editor (like [Sublime](http://www.sublimetext.com/)) and keep the rules for YAML files in mind: never use tabs, always spaces, indentation is important.
 
 
-## Selfhost with Docker and Docker Compose **(Strongly Recommended)**
+## Selfhost with Docker and Docker Compose
 
 **Why is this the recommended way to selfhost FredBoat?**  
 - Docker works on almost any architecture and platform out there in the same way - be it Windows, Mac OS, tons of Linux distros or even your spare Raspberry Pi.
@@ -112,73 +112,6 @@ A sample `fredboat.yaml` and an example `quarterdeck.yaml` can be found on [our 
 You need to read and edit both files according to your preferences. Occasionally new values are added and old ones replaced or discontinued. Check back regularly for updates of those files.
 
 In order to run FredBoat, you must populate the `fredboat.yaml` file with a bot token for Discord and a Youtube API key. More stuff, for example Spotify, can be enabled by filling out the corresponding credentials under `Optional APIs` in the `fredboat.yaml` file. Furthermore, it is critical you follow the instructions to setup the backend credentials, matching those from `quarterdeck.yaml` with the cooresponding fields in `fredboat.yaml`, which is the central file for the bot. 
-
-### Manual Installation 
-
-FredBoat aims to still be compilable easily through Gradle, and the generated jar's (`FredBoat.jar`, `QuarterDeck.jar`, etc.) can be built manually. 
-
-Note that the links to the latest **compiled** QuarterDeck and FredBoat builds are contained below under [CI Server](#ci-server). 
-
-**This method is not recommended unless you wish to edit the source, or are an advanced user who knows what he/she are doing!**
-
-First, make sure you have the following:
-
-1. Java 10 **JDK**: [Oracle](http://www.oracle.com/technetwork/java/javase/downloads/jdk10-downloads-4416644.html) or [OpenJDK](http://jdk.java.net/10/)
- 
-2. [Git](https://www.atlassian.com/git/tutorials/install-git)
- 
-3. [JDK added to your PATH](https://www.tutorialspoint.com/maven/maven_environment_setup.htm)
-
-- Clone the project repo:
-
-```sh
-git clone https://github.com/Frederikam/FredBoat.git
-cd FredBoat
-```
-- Checkout to the `dev` branch, which is the current working branch:
-
-```sh
-git checkout dev
-```
-
-*If you want to do any changes to FredBoat's code, this is the place and time to do them. Remember, after any changes you need to run the build again to compile a fresh jar file containing your changes.*
-
-
-- From inside the `FredBoat` folder downloaded from GitHub, you can now compile FredBoat using Gradle:
-
-
-```sh
-./gradlew build
-```
-or on Windows:
-```sh
-gradlew build
-```
-
-The compiled jar file can be found in `FredBoat/FredBoat/build/libs` and is called `FredBoat.jar`. A similar process goes for the [QuarterDeck Backend](https://github.com/FredBoat/Backend), but as stated on the Backend README, Docker is required there.
-
-
-
-### CI Server
-
-**If you are following the Docker install (as you should be!), the `FredBoat.jar` and `QuarterDeck.jar` files are handled automatically. The following two manual downloads are _not required_ for Docker builds.**
-
-Latest [Development Build](https://ci.fredboat.com/viewLog.html?buildTypeId=FredBoat_Build&buildId=lastSuccessful&buildBranch=refs%2Fheads%2Fdev&tab=artifacts&guest=1)
-
-Latest [QuarterDeck Backend](https://ci.fredboat.com/viewLog.html?buildTypeId=Quarterdeck_Build&buildId=lastSuccessful&buildBranch=refs%2Fheads%2Fdev&tab=artifacts&guest=1) 
-
-If you are on a headless machine you can download the files from the CI server using `wget`, for example: 
-
-Dev (links for `docker-compose.yml`, `fredboat.example.yaml`, and `quarterdeck.example.yaml`) -
-
-```sh
-wget https://ci.fredboat.com/guestAuth/repository/download/FredBoat_Build/.lastSuccessful/docker-compose.yml?branch=refs/heads/dev -O docker-compose.yml
-
-wget https://ci.fredboat.com/guestAuth/repository/download/FredBoat_Build/.lastSuccessful/fredboat.example.yaml?branch=refs/heads/dev -O fredboat.example.yaml
-
-wget https://ci.fredboat.com/guestAuth/repository/download/QuarterDeck_Build/.lastSuccessful/quarterdeck.example.yaml?branch=refs/heads/dev -O quarterdeck.example.yaml
-```
-
 
 ## Bot Administration
 As a selfhoster, you and your configured bot admins have access to additional administrative commands, which you can find through
