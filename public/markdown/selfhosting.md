@@ -47,7 +47,7 @@ Whenever editing any files, use a proper text editor (like [Sublime](http://www.
 
 Should look like this:
 
-[![Folder with files](https://fred.moe/VoK.png)](https://fred.moe/VoK.png) 
+[![Folder with files](https://fred.moe/VoK.png)](https://fred.moe/aKF.png) 
 
 You may want to read these configuration files, as they contain a few advanced options to run your FredBoat.
 
