@@ -5,19 +5,16 @@ import fallback from "./fallback.svg"
 
 class PlayerInfo extends Component {
 
+    websocket = null;
+
     constructor(props) {
         super(props);
         this.state = {player: null, receivedTime: null};
-        const instance = this;
-        // noinspection JSUnresolvedVariable
-        const ws = new WebSocket("ws://localhost:1356/playerinfo/" + props.guild);
-        ws.onmessage = function (msg) {
-            instance.setState({
-                player: JSON.parse(msg.data),
-                receivedTime: new Date() / 1000
-            }, null)
-        };
-        ws.onclose = () => console.log("Websocket disconnected")
+        this.connect(props);
+
+        setInterval(() => {
+            if (this.websocket.readyState === this.websocket.CLOSED) this.connect(props)
+        }, 2000)
     }
 
     render() {
@@ -53,6 +50,20 @@ class PlayerInfo extends Component {
                 </div>
             </div>
         )
+    }
+
+    connect(props) {
+        const instance = this;
+        this.websocket = new WebSocket("ws://localhost:1356/playerinfo/" + props.guild);
+        this.websocket.onmessage = function (msg) {
+            instance.setState({
+                player: JSON.parse(msg.data),
+                receivedTime: new Date() / 1000
+            }, null)
+        };
+        this.websocket.onclose = () => {
+            console.log("Websocket disconnected")
+        }
     }
 }
 
