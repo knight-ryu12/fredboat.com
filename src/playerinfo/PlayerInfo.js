@@ -6,15 +6,16 @@ import fallback from "./fallback.svg"
 class PlayerInfo extends Component {
 
     websocket = null;
+    emptyState = {player: null, receivedTime: null};
 
     constructor(props) {
         super(props);
-        this.state = {player: null, receivedTime: null};
+        this.state = this.emptyState;
         this.connect(props);
 
         setInterval(() => {
             if (this.websocket.readyState === this.websocket.CLOSED) this.connect(props)
-        }, 2000)
+        }, 2000);
     }
 
     render() {
@@ -62,7 +63,8 @@ class PlayerInfo extends Component {
             }, null)
         };
         this.websocket.onclose = () => {
-            console.log("Websocket disconnected")
+            console.log("Websocket disconnected");
+            instance.setState(instance.emptyState)
         }
     }
 }
