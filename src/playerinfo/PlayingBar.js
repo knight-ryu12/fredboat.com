@@ -32,7 +32,7 @@ class PlayingBar extends Component {
     }
 
     componentDidUpdate(prevProps, prevState, snapshot) {
-         setTimeout(() => this.forceUpdate(), 100)
+         setTimeout(() => this.forceUpdate(), 200)
     }
 
     static formatTime(seconds, useHours) {
