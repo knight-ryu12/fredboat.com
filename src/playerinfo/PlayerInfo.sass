@@ -10,7 +10,7 @@
 .PlayerInfo
   display: flex
   justify-content: space-between
-  width: 700px
+  width: 1050px
   height: 81px
   border-radius: 8px
   background-color: #3c404f
@@ -20,9 +20,15 @@
 .PlayerInfo-image
   height: 100%
   margin-right: 12px
+  width: 145px
 
 .PlayerInfo-right
   flex-grow: 1
+  //max-width: 543px
+  white-space: nowrap
+  div
+    overflow: hidden
+    text-overflow: ellipsis
 
 
 .PlayingBar
