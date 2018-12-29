@@ -65,6 +65,10 @@ class PlayerInfo extends Component {
         this.websocket.onclose = () => {
             console.log("Websocket disconnected");
             instance.setState(instance.emptyState)
+        };
+        this.websocket.onabort = (event) => {
+            console.log("Websocket errored ", event);
+            instance.setState(instance.emptyState)
         }
     }
 }
