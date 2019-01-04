@@ -30,7 +30,7 @@ Whenever editing any files, use a proper text editor (like [Sublime](http://www.
 **Why is this the recommended way to selfhost FredBoat?**  
 - Docker works on almost any architecture and platform out there in the same way - be it Windows, Mac OS, tons of Linux distros or even your spare Raspberry Pi.
 - You don't have to install Java or any build tools like Git or Gradle, and copy paste obscure commands to have them spit out a jar, because our [CI server](https://ci.fredboat.com) builds the jar for you and publishes an official FredBoat docker image to the [official docker hub](https://hub.docker.com/r/fredboat/fredboat/).
-- **FredBoat has grown over the years.** Although running the bot with a single jar was possible in the past, it has become increasingly more complex as FredBoat requires a backend database (like PostgreSQL), and many parts  of the bot are separated into other modules, such as [the backend](https://github.com/FredBoat/Backend). FredBoat's structure changes over time play an important role for a bot of this magnitude. However, Docker (with [Docker Compose](https://docs.docker.com/compose/install/)) makes this process fairly straightforward. It is important to note that reading the instructions is more important than ever, as syntax and other small portions of the configuration may affect the bot in many ways. 
+- **FredBoat has grown over the years.** Although running the bot with a single jar was possible in the past, it has become increasingly more complex as FredBoat requires a backend database (like PostgreSQL), and many parts  of the bot are separated into other modules, such as [the backend](https://github.com/FredBoat/Backend). FredBoat's structure changes over time play an important role for a bot of this magnitude. However, Docker (with [Docker Compose](https://docs.docker.com/compose/install/)) makes this process fairly straightforward. It is important to note that reading the instructions is more important than ever, as syntax and other small portions of the configuration may affect the bot in many ways.
 - FredBoat is constantly evolving; there are many parts of the project that are modular. By using Docker, you can ensure you are *much* better off when it comes to future breaking changes, which any selfhoster should expect to encounter once in a while.
 - You can easily configure automated updates using an additional, optional 3rd party docker image called [Watchtower](https://github.com/v2tec/watchtower).
 - All containers will automatically be started when the machine you are using to host FredBoat reboots / starts.
@@ -47,7 +47,7 @@ Whenever editing any files, use a proper text editor (like [Sublime](http://www.
 
 Should look like this:
 
-[![Folder with files](https://fred.moe/aKF.png)](https://fred.moe/aKF.png) 
+[![Folder with files](https://fred.moe/aKF.png)](https://fred.moe/aKF.png)
 
 You may want to read these configuration files, as they contain a few advanced options to run your FredBoat.
 
@@ -59,10 +59,10 @@ You may want to read these configuration files, as they contain a few advanced o
 
 - The `quarterdeck.yaml` file holds the configuration options for the backend (Quarterdeck) database. The basic credentials setup here are used in `fredboat.yaml` and must match.
 
-Got all those things together? [Click here](#config-and-credentials) to learn how to set up config and credentials files, then proceed with the instructions on how to run FredBoat with docker-compose.
+Got all those things together? Continue reading below to learn how to set up config and credentials files, then proceed with the instructions on how to run FredBoat with docker-compose.
 
 
-### Run FredBoat with docker-compose 
+### Run FredBoat with docker-compose
 
 You might need to run these commands with `sudo` depending on your docker setup.
 
@@ -92,6 +92,11 @@ This will also show stopped containers:
 docker ps -a
 ```
 FredBoat will put its log files into a folder called `logs` so you can access them to see if anything is wrong.
+
+Should you want to follow the logs realtime for troubleshooting purposes, you can use:
+```sh
+docker-compose logs -f
+```
 
 To stop everything, do this from inside the directory where you placed the FredBoat files and ran the initial docker-compose command:
 ```sh

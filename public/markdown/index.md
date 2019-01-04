@@ -57,7 +57,7 @@ You can then choose your track with `;;play <number>`, or just do`;;1` to select
 
 **Supported sites:**
 
-* YouTube 
+* YouTube
 
 * SoundCloud
 
@@ -69,7 +69,7 @@ You can then choose your track with `;;play <number>`, or just do`;;1` to select
 
 * Mixer
 
-* [Hastebin](https://hastebin.com) & [Wastebin](https://wastebin.party) lists of links to tracks
+* [Wastebin](https://wastebin.party) lists of links to tracks
 
 * Spotify playlists (loaded through YouTube & SoundCloud, [FredBoatPatron](/docs/donate) only)
 
@@ -79,7 +79,7 @@ You can then choose your track with `;;play <number>`, or just do`;;1` to select
 
 ¹**Due to threats of (D)DoS attacks we have disabled files served over HTTP(S).**
 
-Let us know if you want other sites supported. 
+Let us know if you want other sites supported.
 
 ## Join FredBoat Hangout!
 We invite everyone to join FredBoat hangout, which is a place to discuss suggestions and request for support. I'm very willing to take suggestions for the bot so don't hesitate to say what you have in mind! [Click here to join!](https://discord.gg/cgPFW4q)
@@ -92,7 +92,7 @@ You can join either our [Discord server](https://discord.gg/cgPFW4q) or tweet us
 ## Legal
 By using any of my hosted (but not selfhosted) bots you are subject to our (very minimal!) [terms of service](https://fredboat.com/docs/terms).
 
-Effective as of 25-apr-2017.
+Effective as of 23rd May 2018.
 
 ## Credits
 FredBoat is developed by Fre_d (aka Frederikam) with the help of contributors on GitHub.
@@ -103,4 +103,4 @@ Special thanks to EJ Technologies for providing us with open source licenses for
 
 This site is hosted as an open source project on [Netlify](https://www.netlify.com/).
 
-The FredBoat logo was created by Sturm/JDK\#0216.
+The FredBoat logo was created by Sturm - jdkemt\#0216.
