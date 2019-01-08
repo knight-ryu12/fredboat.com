@@ -92,7 +92,7 @@ You can join either our [Discord server](https://discord.gg/cgPFW4q) or tweet us
 ## Legal
 By using any of my hosted (but not selfhosted) bots you are subject to our (very minimal!) [terms of service](https://fredboat.com/docs/terms).
 
-Effective as of 23rd May 2018.
+Effective as of 25th Apr 2017.
 
 ## Credits
 FredBoat is developed by Fre_d (aka Frederikam) with the help of contributors on GitHub.
