@@ -1,5 +1,5 @@
 # Help support FredBoat♪♪
-We love bringing music right to your Discord Server through FredBoat♪♪. Ever since the launch of FredBoat♪♪, it has grown in popularity at an incredible rate. Improvements are constantly being made to the bot, but the largest challenge is providing enough server power. We have over 400k FredBoat♪♪ bots floating out there in the Discord ocean and, often, 2k+ deployed at any given time!
+We love bringing music right to your Discord Server through FredBoat♪♪. Ever since the launch of FredBoat♪♪, it has grown in popularity at an incredible rate. Improvements are constantly being made to the bot, but the largest challenge is providing enough server power. We have over 1 million FredBoat♪♪ bots floating out there in the Discord ocean and, often, 2k+ deployed at any given time!
 
 The amount of server power required to maintain FredBoat♪♪'s standard of quality is expensive. You can support the development and maintenance of FredBoat♪♪ and enjoy some premium features, too!
 
