@@ -9,7 +9,7 @@ class DynamicLink extends Component {
                 {this.props.children}
             </a>)
         } else {
-            return (<Link to={this.props.to} className={location.pathname === this.props.to ? "current" : null}>
+            return (<Link to={this.props.to} className={window.location.pathname === this.props.to ? "current" : null}>
                 {this.props.children}
             </Link>)
         }

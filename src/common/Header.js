@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
 import "./css/Header.css";
-import logo from "../../public/logo/logo.svg";
+import logo from "../logo/logo.svg";
 import {Link} from 'react-router-dom';
 
-import discord from "../../public/icon/discord.svg";
-import patreon from "../../public/icon/patreon.png";
-import github from "../../public/icon/github.png";
-import twitter from "../../public/icon/twitter.svg";
+import discord from "../icon/discord.svg";
+import patreon from "../icon/patreon.png";
+import github from "../icon/github.png";
+import twitter from "../icon/twitter.svg";
 
 class Header extends Component {
     render() {
