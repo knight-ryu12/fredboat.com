@@ -21,10 +21,9 @@ With these commands you can mention the user's name, nickname, id or discriminat
 
 | Command                    | Description                                                           | Example usage                               |
 |----------------------------|-----------------------------------------------------------------------|---------------------------------------------|
-| ;;clear                    | Delete all messages by FredBoat in the last 50 messages of this channel. | ;;clear                                  |
-| ;;hardban ***@user***      | Ban a user and delete their messages of the last 7 days.              | ;;hardban @Frederikam                       |
+| ;;hardban ***@user***      | Ban a user and delete their messages of the last day.              | ;;hardban @Frederikam                       |
 | ;;kick ***@user***         | Kick a user from this guild.                                          | ;;kick @ObeIisk                             |
-| ;;softban ***@user***      | Softban a user by kicking him and deleting his messages from the last 7 days. | ;;softban @Ternunda Hunter          |
+| ;;softban ***@user***      | Softban a user by kicking him and deleting his messages from the last day. | ;;softban @Ternunda Hunter          |
 
 
 ## Utility
@@ -45,7 +44,6 @@ Only the most important commands are listed here. Say `;;commands Fun` to see a 
 
 | Command                    | Description                                                           | Example usage                               |
 |----------------------------|-----------------------------------------------------------------------|---------------------------------------------|
-| ;;akinator                 | Play a guessing game with Akinator.                                   | ;;akinator                                  |
 | ;;dance                    | Dance for a minute.                                                   | ;;dance                                     |
 | ;;joke ***@username***     | Tell a joke about a user.                                             | ;;joke @Weiss Schnee                        |
 | ;;riot ***text***          | Start a riot. ([example](https://fred.moe/qxB.png))                   | ;;riot Hello, world                         |
@@ -65,7 +63,6 @@ These commands may help you troubleshoot any issues or just learn more about Fre
 
 | Command                    | Description                                                           | Example usage                               |
 |----------------------------|-----------------------------------------------------------------------|---------------------------------------------|
-| ;;adebug                   | Show audio related debug information.                                 | ;;adebug                                    |
 | ;;commands                 | Show available commands.                                              | ;;commands                                  |
 | ;;debug                    | Display debug information about a guild.                              | ;;debug                                     |
 | ;;fuzzy ***term***         | Fuzzy search for users in this guild.                                 | ;;fuzzy roblox fan                          |
@@ -74,7 +71,6 @@ These commands may help you troubleshoot any issues or just learn more about Fre
 | ;;help OR ;;help ***command*** | Receive help for this bot or help for any command.                | ;;help OR ;;help play                       |
 | ;;invite                   | Generate an invite for FredBoat.                                      | ;;invite                                    |
 | ;;music                    | Show detailed music commands and their usage.                         | ;;music                                     |
-| ;;nodes                    | Show information about the connected audio nodes.                     | ;;nodes                                     |
 | ;;ping                     | Return the ping to Discord.                                           | ;;ping                                      |
 | ;;shards                   | Show a summary about FredBoat shard status.                           | ;;shards                                    |
 | ;;stats                    | Show some statistics about FredBoat.                                  | ;;stats                                     |

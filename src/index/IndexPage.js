@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import Header from "../common/Header";
 import "./css/IndexPage.css";
-import logo from "../../public/logo/logo.svg";
+import logo from "../logo/logo.svg";
 import FeatureDescription from "./FeatureDescription";
 import FontAwesome from 'react-fontawesome';
 import FaButton from "../common/FaButton";
