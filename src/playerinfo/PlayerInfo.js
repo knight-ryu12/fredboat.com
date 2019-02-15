@@ -55,7 +55,7 @@ class PlayerInfo extends Component {
 
     connect(props) {
         const instance = this;
-        this.websocket = new WebSocket("ws://localhost:1356/playerinfo/" + props.guild);
+        this.websocket = new WebSocket("ws://gateway.fredboat.com/playerinfo/" + props.guild);
         this.websocket.onmessage = function (msg) {
             instance.setState({
                 player: JSON.parse(msg.data),
