@@ -7,13 +7,20 @@ import IndexPage from "./index/IndexPage";
 import './common/css/layout.css';
 import Callback from "./callback/Callback";
 import NotFoundPage from "./common/NotFoundPage"
+import PlayerInfo from "./playerinfo/PlayerInfo";
 
-const IndexRoute = ({ match }) => {
+const IndexRoute = ({match}) => {
     return <IndexPage/>
 };
 
-const DocsRoute = ({ match }) => {
-    if(match.params.page === "index") {
+const PlayerInfoRoute = ({match}) => {
+    console.log(match);
+    // noinspection JSUnresolvedVariable
+    return <PlayerInfo guild={match.params.guild}/>
+};
+
+const DocsRoute = ({match}) => {
+    if (match.params.page === "index") {
         return <Redirect to="/docs/"/>
     }
 
@@ -22,7 +29,7 @@ const DocsRoute = ({ match }) => {
     return <Docs page={page}/>
 };
 
-const CallbackRoute = ({ match }) => {
+const CallbackRoute = ({match}) => {
     return <Callback music={match.path.endsWith("/music")}/>
 };
 
@@ -38,18 +45,19 @@ const Analytics = ({location}) => {
 };
 
 ReactDOM.render(
-  <BrowserRouter id="UA-25845175-7">
-    <div>
-      <Switch>
-        <Route exact path="/" render={IndexRoute}/>
-        <Route exact path="/docs/" component={DocsRoute}/>
-        <Route exact path="/callback/music" component={CallbackRoute}/>
-        <Route exact path="/callback/nonmusic" component={CallbackRoute}/>
-        <Route path="/docs/:page" component={DocsRoute}/>
-        <Route component={NotFoundPage}/>
-      </Switch>
-      <Route path="/" render={Analytics}/>
-    </div>
-  </BrowserRouter>,
-  document.getElementById('root')
+    <BrowserRouter id="UA-25845175-7">
+        <div>
+            <Switch>
+                <Route exact path="/" render={IndexRoute}/>
+                <Route exact path="/docs/" component={DocsRoute}/>
+                <Route exact path="/callback/music" component={CallbackRoute}/>
+                <Route exact path="/callback/nonmusic" component={CallbackRoute}/>
+                <Route path="/docs/:page" component={DocsRoute}/>
+                <Route path="/player/:guild" component={PlayerInfoRoute}/>
+                <Route component={NotFoundPage}/>
+            </Switch>
+            <Route path="/" render={Analytics}/>
+        </div>
+    </BrowserRouter>,
+    document.getElementById('root')
 );
