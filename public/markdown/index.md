@@ -29,7 +29,6 @@ FredBoat is made to be super simple to use! Getting FredBoat running on your ser
 | ;;restart                  | Restart the currently playing track.                                  | ;;restart                                   |
 | ;;history                  | Show history of recently played tracks.                               | ;;h                                         |
 | ;;export                   | Export the current queue to hastebin.                                 | ;;ex                                        |
-| ;;split ***youtube-url***  | Split a YouTube track into a tracklist based on its description.      | ;;split https://www.youtube.com/watch?v=8EdW28B-In4 |
 | ;;volume                   | Set the volume ([FredBoatPatron](/docs/donate) only).                 | ;;vol 150                                   |
 | ;;help ***command***       | Show advanced usage of a command                                      | ;;help skip                                 |
 
