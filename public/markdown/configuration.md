@@ -1,56 +1,60 @@
-# Configuration
-FredBoat supports a few options when it comes to customizing its behavior in your server. __You must have admin permissions to change any of these settings.__
+# 設定について
+Fredboatは動作についてのいくつかの設定をあなたのサーバーですることができます。
+__これらの設定を変更するには、管理者権限が必要です。__
 
-## The ;;lang command
-Want to use FredBoat in your native language? Server admins can set the language of FredBoat in their server. Say, for instance, I wanted to change the language to French:
+## ;;langコマンド
+FredBoatをあなたのネイティブの言語で使いたいですか? サーバー管理者はFredBoatの言語設定を変更することができます。 例えば、フランス語に変えたい場合・・・:
 
 ```
 ;;lang fr_FR 
 ```
 
-Run the `;;lang` command with no arguments to get a full list of supported languages. All translations are crowdsourced and we could really use some help bringing FredBoat to the world! [Click here to help](https://crowdin.com/project/fredboat).
+`;;lang`コマンドを何も引数をつけずに実行すると、サポートされているすべての言語を表示できます。 すべての翻訳はクラウドソーシングされたものです。 [ここ](https://crowdin.com/project/fredboat)から翻訳サポートできます。
 
-## The ;;config command
-This command allows you to change a couple server specific settings for the bot. Running the `;;config` command without args should show you something like this:
+## ;;configコマンド
+このコマンドはサーバー内でのFredBoatのふるまいをいくつか変更することができます。`;;config`コマンドを何も引数をつけずに実行すると以下のようなものが表示されます。
 
 ```
 track_announce = false
 auto_resume = false
 ```
 
-If you want FredBoat to start announcing new tracks being played, you can enable that feature with:
+もし、新しい曲が再生されるときにアナウンスさせたい場合、この機能を有効化するには:
 
 ```
 ;;config track_announce true
 ```
 
-If you want to get the bot to unpause when someone joins the voice chat, you can change this setting:
+もし、だれかVCに入ってきた場合に再生を再開したい場合、
 
 ```
 ;;config auto_resume true
 ```
+とします。
 
-## The ;;prefix command
-This command allows changing and viewing the prefix. Running `;;prefix` without any args should show you something like this (output may vary based on language and prefix):
+## ;;prefixについて。
+このコマンドはプレフィックスを表示したり変更したりできます。 `;;prefix` コマンドを何も引数をつけずに実行すると、以下のような情報が表示されます。(出力は変化する可能性があります。):
 
 ```
 The prefix for this guild is ;;
 You can show the prefix anytime again by mentioning me.
 ```
 
-If you want to set a prefix, you may do so by running:
+もし変更したい場合、以下のコマンドを実行すると変更できます。
 
 ```
 ;;prefix <prefix>
 ```
 
-If you wish for FredBoat to not necessitate a prefix for executing commands, you may do so by running:
+もし、プレフィックスを無効化(プレフィックスなしでコマンドを実行させたい場合)したい場合は、
 
 ```
 ;;prefix no_prefix
 ```
 
-To reset the prefix to the default one, say:
+を実行してください。
+
+デフォルトに戻したい場合:
 
 ```
 <your prefix> prefix reset
@@ -58,29 +62,29 @@ OR
 @FredBoat prefix reset
 ```
 
-If you cannot remember or do not know the prefix for FredBoat in a server, just mentioning FredBoat will show you the prefix. Additionally you can mention FredBoat and follow that with a command to execute that command.
+もし、設定されているプレフィックスを忘れた/知らない場合、FredBoatをメンションすると今設定されている物を表示できます。FredBoatをメンションしてもコマンドを実行できますよ。
 
-## The ;;modules command
-FredBoat's main focus is delivering music to your server, but it also packs [additional command modules](/docs/non_music). You can disable and enable those with the ;;modules command.
+## ;;modulesコマンド
+FredBoatは曲をあなたのサーバーに届けるように作られてますが、[追加コマンドモジュール](/docs/non_music)もあります。モジュール類は有効にしたり、無効にしたりできます。
 
-Show the current status of modules:
+モジュールの状態を表示:
 ```
 ;;modules
 ```
-Disable a command module, for example Fun:
+モジュールの無効化(例:Fun):
 ```
 ;;modules disable Fun
 ```
-Enable a command module, for example Moderation:
+モジュールの有効化(例:Moderation)
 ```
 ;;modules enable Moderation
 ```
 
 
-## Enabling/disabling automatic deletion of ;;play requests
-If FredBoat has permission to 'Manage Messages' in the channel settings, it will automatically delete any valid ;;play requests.
-If you prefer to keep the messages, you can just disable this bot's 'Manage Messages' permission. 
+## ;;playリクエストの自動消去のオンオフについて
+もし、FredBoatがチャンネル内に'メッセージの管理'の権限を持っていたら、;;playリクエスト関連のメッセージを自動的に削除します。
+'メッセージの管理'の権限を外すことでその機能を無効化できます。
 
-## Limiting access to text and voice channels
-To restrict FredBoat from receiving commands from a certain text channel, simply revoke the bot's permission to "Send Messages" in that channel. Fredboat will only accept commands from a channel it can write to.
-Likewise, if you do not want FredBoat to join certain voice channels, take away its permission to "Connect."
+## テキストとボイスチャンネルの制限
+FredBoatをチャンネルからコマンドを取得するのを制限したい場合、制限したいチャンネルに対して、"メッセージの送信"をFredBoatに対して外してください。FredBoatはメッセージを送信できるチャンネルにしか反応しません。
+同じように、ボイスチャンネルから制限したい場合、"接続"権限を外してください。
