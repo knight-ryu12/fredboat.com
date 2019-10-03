@@ -11,19 +11,19 @@ class Callback extends Component {
     render() {
         let music = this.props.music;
 
-        let title = music ? "FredBoatMusic was successfully added" : "FredBoat was successfully added";
-        let desc = music ? "If you haven't already, be sure to check out some of the commands you can use by reading the documentation."
-            : "However! You just added the non-music version of FredBoat. If you want music, click the purple button below.";
-        let lowerDesc = music ? "We hope you enjoy FredBoat♪♪!" : "We hope you enjoy FredBoat!";
+        let title = music ? "FredBoatMusicが正常に追加されました" : "FredBoatが正常に追加されました";
+        let desc = music ? "まだ読んでいない場合は、ドキュメントを読んで使用できるコマンドの一部を確認してください。"
+            : "しかし！ まだFredBoatの非音楽バージョンを追加たばかりです。もしあなたが音楽を再生したいなら,下の紫色のボタンをクリックしてください。";
+        let lowerDesc = music ? "FredBoatをお楽しみください♪♪" : "FredBoatをお楽しみください！";
         let docsLink = music ? "/docs" : "/docs/non_music";
-        let addBtnText = music ? "Add to another server" : "Add music bot";
+        let addBtnText = music ? "他のサーバーにも追加する" : "音楽ボットを追加する";
 
         let error = window.location.search.substr(1).includes("error");
         if(error) {
-            title = "Looks like Discord returned an error";
-            desc = "This usually happens when you hit \"cancel\" in the authorize dialog."
+            title = "Discordがエラーを返したようです...";
+            desc = "これは通常、認証ダイアログで「キャンセル」を押すと発生します。";
             lowerDesc = null;
-            addBtnText = "Add music bot";
+            addBtnText = "音楽ボットを追加する";
         }
 
         return (
@@ -44,23 +44,11 @@ class Callback extends Component {
                                       icon="sign-in" text={addBtnText} color="#7289DA"/>
                             <FaButton to="/docs/donate" icon="money" text="Donate" color="rgb(249, 104, 84)"/>
                         </div>
-                        <div id="callback-ad"/>
                     </div>
                 </div>
                 <Footer/>
             </div>
         );
-    }
-
-    //noinspection JSMethodCanBeStatic
-    componentDidMount() {
-        console.log("Spawned ad");
-        const script = document.createElement("script");
-        script.async = true;
-        script.type = "text/javascript";
-        script.src = "//cdn.carbonads.com/carbon.js?zoneid=1673&serve=C6AILKT&placement=fredboatcom";
-        script.id="_carbonads_js";
-        document.getElementById("callback-ad").appendChild(script);
     }
 }
 
