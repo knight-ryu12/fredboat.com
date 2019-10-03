@@ -45,7 +45,7 @@ const Analytics = ({location}) => {
 };
 
 ReactDOM.render(
-    <BrowserRouter id="UA-25845175-7">
+    <BrowserRouter id="UA-149355737-1">
         <div>
             <Switch>
                 <Route exact path="/" render={IndexRoute}/>

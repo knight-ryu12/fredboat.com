@@ -24,9 +24,9 @@ class Index extends Component {
                                     <img className="logo" src={logo} alt="Logo" draggable="false"/>
                                 </div>
                             </div>
-                            <FeatureDescription title="Meet FredBoat♪♪"
-                                                text="FredBoat is a free Discord music bot that delivers high-quality music to your Discord server.
-                            You can easily add the music bot to your Discord server with zero configuration."
+                            <FeatureDescription title="やっほー！FredBoat♪♪"
+                                                text="FredBoatは、Discordサーバーに高品質の音楽を配信する無料のDiscord音楽ボットです。
+                            設定なしで簡単に音楽ボットをDiscordサーバーに追加できます。"
                                                 under={
                                                     (
                                                         <div>
@@ -43,8 +43,8 @@ class Index extends Component {
 
                     <div className="feature-section">
                         <div className="feature-section-inner">
-                            <FeatureDescription title="Wide range of integrations"
-                                                text="FredBoat can play music from YouTube, Soundcloud, Bandcamp, direct links, Twitch. Yes, it also supports playlists and livestreams!"/>
+                            <FeatureDescription title="幅広いメディアをサポート"
+                                                text="FredBoatは、YouTube、SoundCloud、BandCamp、ダイレクトリンク、Twitchの音楽を再生できます。 もちろんプレイリストとライブストリームもサポートしています！"/>
                             <div className="feature-deco">
                                 <div className="feature-sources">
                                     <div>
@@ -73,15 +73,15 @@ class Index extends Component {
                                     </div>
                                 </div>
                             </div>
-                            <FeatureDescription title="YouTube and Soundcloud search"
-                                                text="Instead of linking directly to a track, you can also choose to simply just type in the name of your song and let FredBoat find it for you."/>
+                            <FeatureDescription title="YouTubeやSoundCloudによる検索"
+                                                text="トラックの直接リンクの代わりに、単に曲の名前を入力するだけで、FredBoatが曲を見つけられるようにすることもできます。"/>
                         </div>
                     </div>
 
                     <div className="feature-section">
                         <div className="feature-section-inner">
-                            <FeatureDescription title="Shuffle and repeat"
-                                                text="FredBoat has full support for shuffling your playlist. You can even choose to put just one or the entire queue on repeat."/>
+                            <FeatureDescription title="シャッフルとリピート"
+                                                text="FredBoatは、プレイリストのシャッフルを完全にサポートしています。キューを1つだけ、またはキュー全体を繰り返すこともできます。"/>
                             <div className="feature-deco">
                                 <FontAwesome name="random" style={{fontSize: "7em", marginRight: "25px"}}/>
                                 <FontAwesome name="repeat" style={{fontSize: "7em"}}/>
@@ -94,13 +94,13 @@ class Index extends Component {
                             <div className="feature-deco">
                                 <FontAwesome name="lock" style={{fontSize: "10em"}}/>
                             </div>
-                            <FeatureDescription title="Easy and secure permission system"
-                                                text="FredBoat was initially created to be easy to use in small servers, but if you are the admin of a larger server you can keep the trolls at bay by restricting who can modify the queue."
+                            <FeatureDescription title="簡単でセキュアな権限システム"
+                                                text="FredBoatは当初、小規模サーバーで使いやすいように作成されましたが、大規模サーバーの管理者である場合は、キューを変更できるユーザーを制限することで、荒らしを抑えることができます。"
                                                 under={
                                                     (
                                                         <div>
                                                             <FaButton to="/docs/permissions"
-                                                                      text="Read about permissions"
+                                                                      text="権限についてもっと知る"
                                                                       icon="book" color="#3399ff"/>
                                                         </div>
                                                     )}/>
@@ -110,8 +110,8 @@ class Index extends Component {
                     <div className="feature-section">
                         <div className="feature-section-inner">
 
-                            <FeatureDescription title="Completely open source"
-                                                text="Since development began, FredBoat has always been open source! This means that FredBoat is shaped by the community, and advanced users can even host their own FredBoat."
+                            <FeatureDescription title="完全なオープンソース"
+                                                text="開発が始まって以来、FredBoatは常にオープンソースです！ つまり、FredBoatはコミュニティによって形成され、上級者は独自のFredBoatをホストすることもできます。"
                                                 under={
                                                     (
                                                         <div>
