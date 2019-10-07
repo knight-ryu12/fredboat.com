@@ -1,47 +1,49 @@
-# Welcome to FredBoat Docs
-FredBoat is a free Discord music bot that delivers high-quality music to your Discord server. FredBoat can be easily plugged into your Discord server with no configuration.
+# FredBoatのドキュメントへようこそ！
+FredBoatは、Discordサーバーに高品質の音楽を配信する無料のDiscord音楽ボットです!
+
+FredBoatはあなたのDiscordサーバーに簡単に設定なしに追加できます！
 
 
-## Setting up the bot
-FredBoat is made to be super simple to use! Getting FredBoat running on your server is easy. You can invite FredBoat by authenticating it with your account using [this](https://goo.gl/cFs5M9) link. Bear in mind that you must have `Manage Server` permissions to be able to do this.
+## Botの設定っ
+FredBoatは簡単に利用できるように作られています！ 自分のアカウントで[このリンク](https://goo.gl/cFs5M9)を使えば簡単にFredBoatをあなたのサーバーで使用できます。 `サーバー管理`の権限が必要なので気を付けてくださいね。
 
-# Music Commands
+# ミュージックコマンドs
 
-| Command                    | Description                                                           | Example usage & aliases                     |
+| コマンド                    | 説明                                                                   | 使用例とエイリアス                             |
 |----------------------------|-----------------------------------------------------------------------|---------------------------------------------|
-| ;;play ***url***           | Play music from the given URL. See supported sources below.           | ;;p https://www.youtube.com/watch?v=dQw4w9WgXcQ |
-| ;;play ***words***         | Search for a track on youtube and soundcloud.                         | ;;p Never Gonna Give You Up                 |
-| ;;queue                    | Display the queue of the current tracks in the playlist.              | ;;q                                         |
-| ;;nowplaying               | Display the currently playing track.                                  | ;;np                                        |
-| ;;skip                     | Remove the currently playing track from the queue. `;;help skip` to learn how to skip more than one track | ;;s     |
-| ;;voteskip                 | Vote to skip the current track. Must have at least 50% of the votes.  | ;;v                                         |
-| ;;stop                     | Stop the player and **clear** the playlist. Reserved for moderators.  | ;;st                                        |
-| ;;pause                    | Pause the player.                                                     | ;;pause                                     |
-| ;;resume                   | Resume the player.                                                    | ;;resume                                    |
-| ;;join                     | Make FredBoat join your current voice channel.                        | ;;j                                         |
-| ;;leave                    | Make FredBoat leave the current voice channel.                        | ;;lv                                        |
-| ;;repeat                   | Change the repeat mode. Run this command for more info.               | ;;rep all                                   |
-| ;;shuffle                  | Toggle shuffle mode.                                                  | ;;sh                                        |
-| ;;reshuffle                | Reshuffle the queue.                                                  | ;;resh                                      |
-| ;;fwd ***time***           | Forward the track by the given amount of time.                        | ;;fwd 2:30                                  |
-| ;;rew ***time***           | Rewind the track by the given amount of time.                         | ;;rew 30                                    |
-| ;;seek ***time***          | Set the position of the track to the given time.                      | ;;seek 2:45:00                              |
-| ;;restart                  | Restart the currently playing track.                                  | ;;restart                                   |
-| ;;history                  | Show history of recently played tracks.                               | ;;h                                         |
-| ;;export                   | Export the current queue to hastebin.                                 | ;;ex                                        |
-| ;;volume                   | Set the volume ([FredBoatPatron](/docs/donate) only).                 | ;;vol 150                                   |
-| ;;help ***command***       | Show advanced usage of a command                                      | ;;help skip                                 |
+| ;;play ***url***           | 渡されたURLの曲を再生します。サポートされているリンクは以下を参照               | ;;p https://www.youtube.com/watch?v=dQw4w9WgXcQ |
+| ;;play ***words***         | YoutubeとSoundCloudを探します                                           | ;;p Never Gonna Give You Up                 |
+| ;;queue                    | 登録された曲を確認します                                                  | ;;q                                         |
+| ;;nowplaying               | 今再生している曲の内容を表示します                                          | ;;np                                        |
+| ;;skip                     | キューから今の曲を削除します。`;;help skip`で複数曲スキップする方法を確認できます                                    | ;;s     |
+| ;;voteskip                 | 投票スキップをします。50%の投票でスキップされます。                           | ;;v                                         |
+| ;;stop                     | プレイヤーをストップして、キューを**全削除**します。モデレーター専用！           | ;;st                                        |
+| ;;pause                    | 一時停止します。                                                         | ;;pause                                     |
+| ;;resume                   | 再開します。                                                            | ;;resume                                    |
+| ;;join                     | FredBoatを今いるボイスチャンネルに参加させます。                             | ;;j                                         |
+| ;;leave                    | FredBoatを今いるボイスチャンネルから抜けさせます。                           | ;;lv                                        |
+| ;;repeat                   | リピートモードを変更します。コマンドを走らせると詳細を確認できます               | ;;rep all                                   |
+| ;;shuffle                  | シャッフルモードを有効/無効にできます                                       | ;;sh                                        |
+| ;;reshuffle                | キューを再シャッフルします。                                               | ;;resh                                      |
+| ;;fwd ***time***           | トラックを渡された時間分進めます。                                          | ;;fwd 2:30                                  |
+| ;;rew ***time***           | トラックを渡された時間分戻します。                                          | ;;rew 30                                    |
+| ;;seek ***time***          | トラックを渡された時間にします。                                           | ;;seek 2:45:00                              |
+| ;;restart                  | 今のトラックを再スタートします。                                           | ;;restart                                   |
+| ;;history                  | 再生されたトラックのヒストリを表示します                                     | ;;h                                         |
+| ;;export                   | 今のキューをhastebinにコピーします                                        | ;;ex                                        |
+| ;;volume                   | ボリュームをセットします([FredBoatPatron](/docs/donate)オンリー！)          | ;;vol 150                                   |
+| ;;help ***command***       | コマンドのヘルプを使い方を表示します                                        | ;;help skip                                 |
 
 
-FredBoat will not be able to play tracks blocked in the US (usually due to copyright infringements on YouTube).
+FredBoatはアメリカでブロックされた曲は再生できません(著作権の問題)
 
-## Adding music to the playlist
-Adding music to the playlist is pretty simple. To start playing a track, use the ;;play command. Here are two examples:
+## プレイリストに曲を追加する。
+プレイリストに曲を追加するのは簡単です。 ;;playコマンドを使って追加してください。例:
 ```
 ;;play https://www.youtube.com/watch?v=dQw4w9WgXcQ
 ;;play rick roll
 ```
-You can either explicitly state the URL, or you can get FredBoat to search YouTube and give you some choices. Here's an example response:
+URLを直接指定することもできますし、FredBoatがYouTube検索もしてくれます。例:
 
 ```
 Please select a track with the ';;play 1-5' command:
@@ -52,9 +54,9 @@ Please select a track with the ';;play 1-5' command:
 5: Melania Trump's RNC RICKROLL (00:19)
 ```
 
-You can then choose your track with `;;play <number>`, or just do`;;1` to select the first result, or `;;3` to select the third result, or even `;;4 1 3` to select more than one result.
+`;;play <番号>`で指定ができます。または`;;1`で1番目のトラックを選択、`;;3`で3番目のトラックを選択,`;;4 1 3`と指定することで複数選択もできます。
 
-**Supported sites:**
+**サポートされているサイト:**
 
 * YouTube
 
@@ -68,38 +70,32 @@ You can then choose your track with `;;play <number>`, or just do`;;1` to select
 
 * Mixer
 
-* [Wastebin](https://wastebin.party) lists of links to tracks
+* [Wastebin](https://wastebin.party) リンクのリスト
 
-* Spotify playlists (loaded through YouTube & SoundCloud, [FredBoatPatron](/docs/donate) only)
+* Spotifyプレイリスト (YouTube & SoundCloudからロードされます。 [FredBoatPatron](/docs/donate)オンリー！)
 
-~~Direct links to files, including streams. Not all formats supported.~~¹
-
-~~URLs pointing to .m3u and .pls can be used to start streams.~~¹
-
-¹**Due to threats of (D)DoS attacks we have disabled files served over HTTP(S).**
-
-Let us know if you want other sites supported.
+もしほかのサイトの案があるなら教えてくださいね！
 
 ## Join FredBoat Hangout!
-We invite everyone to join FredBoat hangout, which is a place to discuss suggestions and request for support. I'm very willing to take suggestions for the bot so don't hesitate to say what you have in mind! [Click here to join!](https://discord.gg/cgPFW4q)
+FredBoatHangoutに招待します。何も気にしないで気軽に意見質問してくださいね！[参加する](https://discord.gg/cgPFW4q)
 
-## Support
-Before you do anything, please [read our FAQ](https://fredboat.com/docs/faq).
+## サポート
+[FAQ](https://fredboat.com/docs/faq)を読んでから質問などをしてください。
 
-You can join either our [Discord server](https://discord.gg/cgPFW4q) or tweet us at [@DiscordFredBoat](https://twitter.com/DiscordFredBoat).
+[Discord server](https://discord.gg/cgPFW4q)に参加するか、または[@DiscordFredBoat](https://twitter.com/DiscordFredBoat)にツイートしてください。
 
-## Legal
-By using any of my hosted (but not selfhosted) bots you are subject to our (very minimal!) [terms of service](https://fredboat.com/docs/terms).
+## 規約
+私がホストする(セルフホスト以外)ボットについては(非常に小さい!)[利用規約](https://fredboat.com/docs/terms)に同意する必要があります。
 
-Effective as of 25th Apr 2017.
+2017年4月25日有効。
 
 ## Credits
-FredBoat is developed by Fre_d (aka Frederikam) with the help of contributors on GitHub.
+FredBoatはFre_d(Frederikam)とGitHubの支援によって開発されました。
 
-Special thanks to EJ Technologies for providing us with open source licenses for their [Java profiler](https://www.ej-technologies.com/products/jprofiler/overview.html).
+[Java profiler](https://www.ej-technologies.com/products/jprofiler/overview.html)を提供してくれたEJ Technologiesに感謝。
 
 [![JProfiler](https://www.ej-technologies.com/images/product_banners/jprofiler_large.png)](https://www.ej-technologies.com/products/jprofiler/overview.html)
 
-This site is hosted as an open source project on [Netlify](https://www.netlify.com/).
+FredBoat logo By Sturm - jdkemt\#0216.
 
-The FredBoat logo was created by Sturm - jdkemt\#0216.
+翻訳: Chromaryu
