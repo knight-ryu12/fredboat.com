@@ -85,12 +85,12 @@ FredBoatHangoutに招待します。何も気にしないで気軽に意見質�
 [Discord server](https://discord.gg/cgPFW4q)に参加するか、または[@DiscordFredBoat](https://twitter.com/DiscordFredBoat)にツイートしてください。
 
 ## 規約
-私がホストする(セルフホスト以外)ボットについては(非常に小さい!)[利用規約](https://fredboat.com/docs/terms)に同意する必要があります。
+Fre\_dがホストする(セルフホスト以外)ボットについては(非常に小さい!)[利用規約](https://fredboat.com/docs/terms)に同意する必要があります。
 
 2017年4月25日有効。
 
 ## Credits
-FredBoatはFre_d(Frederikam)とGitHubの支援によって開発されました。
+FredBoatはFre\_d(Frederikam)とGitHubの支援によって開発されました。
 
 [Java profiler](https://www.ej-technologies.com/products/jprofiler/overview.html)を提供してくれたEJ Technologiesに感謝。
 
