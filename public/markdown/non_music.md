@@ -49,7 +49,7 @@
 | ;;riot ***text***          | ([例]](https://fred.moe/qxB.png))                   | ;;riot Hello, world                         |
 | ;;say ***text***           | 入れたものをエコー                                         | ;;say Hi dad.                               |
 | ;;magic ***text***         | 魔法を撃ちます。                                                        | ;;magic Avada Kedavra                       |
-| ;;catgirl                  | 猫少女・・・？                                                       | ;;neko                                      |
+| ;;catgirl                  | 猫耳少女！                                                       | ;;neko                                      |
 | ;;facedesk                 | 机に突っ伏してる画像を出力                                           | ;;facedesk                                  |
 | ;;hug ***@username***      | ハグ。                                                         | ;;hug @Shredder121                          |
 | ;;pat ***@username***      | なでなで・・・                                                         | ;;pat @Real KC                              |
